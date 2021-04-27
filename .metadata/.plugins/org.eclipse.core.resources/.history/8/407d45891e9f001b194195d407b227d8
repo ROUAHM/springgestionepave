@@ -1,0 +1,5 @@
+package com.star.gestiondesepavesback.entities;
+
+public class Admin {
+
+}

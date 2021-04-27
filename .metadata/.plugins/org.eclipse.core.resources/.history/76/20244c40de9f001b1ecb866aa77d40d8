@@ -1,0 +1,23 @@
+package com.star.gestiondesepavesback.Controller;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.star.gestiondesepavesback.repos.UserRepository;
+
+@RestController
+@RequestMapping (path="/user")
+public class User {
+	@Autowired 
+	UserRepository userRepository ;
+	@GetMapping(path = "/getusernames")
+	public String totest() {
+		return "welcom to java";
+	}
+	public List<String> getAllUserNames() {
+		  return userRepository.getAllUserNames();
+		 }
+}

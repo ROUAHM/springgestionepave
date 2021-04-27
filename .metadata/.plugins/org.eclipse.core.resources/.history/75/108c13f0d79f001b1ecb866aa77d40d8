@@ -1,0 +1,80 @@
+package com.star.gestiondesepavesback.entities;
+
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+@Entity 
+public class Epave {
+	@Id
+	@GeneratedValue
+	private long id_epave ;
+	private long id_rapport ;
+	private String matricule ;
+	private float prix ;
+	
+	
+	public Epave() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+
+	public long getId_epave() {
+		return id_epave;
+	}
+
+
+	public void setId_epave(long id_epave) {
+		this.id_epave = id_epave;
+	}
+
+
+	public long getId_rapport() {
+		return id_rapport;
+	}
+
+
+	public void setId_rapport(long id_rapport) {
+		this.id_rapport = id_rapport;
+	}
+
+
+	public String getMatricule() {
+		return matricule;
+	}
+
+
+	public void setMatricule(String matricule) {
+		this.matricule = matricule;
+	}
+
+
+	public float getPrix() {
+		return prix;
+	}
+
+
+	public void setPrix(float prix) {
+		this.prix = prix;
+	}
+
+
+	
+	@Override
+	public String toString() {
+		return "Epave [id_epave=" + id_epave + ", id_rapport=" + id_rapport + ", matricule=" + matricule + ", prix="
+				+ prix + "]";
+	}
+
+
+	public Epave(long id_epave, long id_rapport, String matricule, float prix) {
+		super();
+		this.id_epave = id_epave;
+		this.id_rapport = id_rapport;
+		this.matricule = matricule;
+		this.prix = prix;
+	}
+	
+	
+	
+
+}

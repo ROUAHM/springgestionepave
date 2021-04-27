@@ -1,0 +1,10 @@
+package com.star.gestiondesepavesback.repos;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.star.gestiondesepavesback.entities.User;
+
+
+public interface UserRepository extends JpaRepository<User, Long> {
+
+}
